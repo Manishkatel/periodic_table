@@ -137,11 +137,6 @@ periodic_table/
     └── manage.py
 ```
 
-## API Endpoints
-
-- `GET /api/elements/` - List all elements
-- `GET /api/elements/{atomic_number}/` - Get element details by atomic number
-
 ## Notes
 
 - The frontend includes default data that works even if the backend is not running
