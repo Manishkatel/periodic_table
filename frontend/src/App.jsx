@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 
 // Lazy load heavy components for code splitting
 const ElementDetail = lazy(() => import('./pages/ElementDetail'))
+const QuizCompare = lazy(() => import('./pages/QuizCompare'))
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/element/:atomicNumber" element={<ElementDetail />} />
+          <Route path="/quiz-compare" element={<QuizCompare />} />
         </Routes>
       </Suspense>
     </Router>
