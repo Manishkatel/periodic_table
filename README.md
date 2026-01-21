@@ -19,6 +19,17 @@ A comprehensive web application for exploring periodic table elements with detai
   10. Biological & Environmental Properties (3 properties)
   11. Classification Properties (3 properties)
 - **Element Images**: Display element images with fallback placeholders
+- **Quiz System**: 
+  - Select up to 2 elements to take an interactive quiz
+  - 10 questions per quiz (5 questions per element when 2 elements selected, or 10 questions for a single element)
+  - 20 unique questions generated dynamically for each element based on their properties
+  - Questions cover atomic number, symbol, name, group, period, block, category, atomic mass, protons, neutrons, electrons, and more
+  - View detailed results with correct/incorrect answers and score percentage
+- **Element Comparison**: 
+  - Compare any two elements side-by-side in a comprehensive table
+  - Shows differences in atomic properties, periodic properties, physical properties, and electronic properties
+  - Highlights which element has greater/lower values for numeric properties
+  - Includes summary section with key information about both elements
 - **Modern UI**: Built with React, Tailwind CSS, and Three.js for 3D visualization
 
 ## Tech Stack
@@ -115,12 +126,19 @@ periodic_table/
 │   │   ├── components/
 │   │   │   ├── PeriodicTable.jsx
 │   │   │   ├── Atom3D.jsx
-│   │   │   └── PropertyTabs.jsx
+│   │   │   ├── PropertyTabs.jsx
+│   │   │   ├── QuizComponent.jsx
+│   │   │   └── ComparisonComponent.jsx
 │   │   ├── pages/
 │   │   │   ├── HomePage.jsx
-│   │   │   └── ElementDetail.jsx
+│   │   │   ├── ElementDetail.jsx
+│   │   │   └── QuizCompare.jsx
+│   │   ├── utils/
+│   │   │   ├── periodicTableColors.js
+│   │   │   └── questionGenerator.js
 │   │   ├── data/
-│   │   │   └── elements.js
+│   │   │   ├── elements.js
+│   │   │   └── elementFacts.js
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   ├── package.json
@@ -143,6 +161,9 @@ periodic_table/
 - Element images are fetched from external sources with fallback placeholders
 - The 3D atom visualization shows a simplified model based on electron shells
 - All 118 elements are included in the periodic table
+- Quiz questions are generated dynamically for each element, ensuring 20 unique questions per element
+- Questions cover various aspects including atomic properties, periodic trends, classification, and element relationships
+- The comparison feature works with any two elements and highlights key differences in their properties
 
 ## Development
 
