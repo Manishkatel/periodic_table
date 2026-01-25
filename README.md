@@ -35,12 +35,9 @@ A comprehensive web application for exploring periodic table elements with detai
 ## Tech Stack
 
 ### Frontend
-- React 18
 - Vite
 - Tailwind CSS
-- React Router DOM
 - Three.js (@react-three/fiber, @react-three/drei)
-- Axios
 
 ### Backend
 - Django 4.2
