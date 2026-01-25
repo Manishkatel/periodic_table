@@ -1,6 +1,6 @@
 # Periodic Table Elements Explorer
 
-A comprehensive web application for exploring periodic table elements with detailed properties, 3D atom visualization, and organized property tabs.
+A  web application for exploring periodic table elements with detailed properties, 3D atom visualization, and organized property tabs.
 
 ## Features
 
